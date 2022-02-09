@@ -1,0 +1,322 @@
+.hero {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0.616);
+  background-image: url(../img/banner-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero .hero__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.301);
+  justify-content: space-between;
+  padding: 15px 5%;
+}
+
+.hero .hero__container .hero__content {
+  display: initial;
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+
+.hero .hero__container .hero__content .hero__link {
+  color: white;
+  text-decoration: none;
+}
+
+.hero .hero__container .hero__content .hero__link:hover {
+  color: #ffa800;
+  transition: .2s;
+}
+
+.hero .hero__container .hero__content .hero__link--mod {
+  border-right: 1px solid rgba(255, 255, 255, 0.301);
+  padding-right: 10px;
+}
+
+.hero .hero__container .hero__content .hero__link--mod::before {
+  content: "\f059";
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+
+.hero .hero__container .hero__content .hero__link--mod-two::before {
+  content: "\f0e0";
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+
+.hero .hero__container .hero__content__two {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.hero .hero__container .hero__content__two .hero__select {
+  border-right: 1px solid rgba(255, 255, 255, 0.301);
+  padding-right: 10px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero__container .hero__content__two .hero__select .select {
+  background: none;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.hero .hero__container .hero__content__two .hero__select .select .select__item {
+  color: black;
+}
+
+.hero .hero__container .hero__content__two .hero__link {
+  text-decoration: none;
+  color: white;
+}
+
+.hero .hero__container .hero__content__two .hero__link--mod {
+  border-right: 1px solid rgba(255, 255, 255, 0.301);
+  padding-right: 10px;
+}
+
+.hero .hero__container .hero__content__two .hero__link--mod::before {
+  content: "\f090";
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+
+.hero .hero__container .hero__content__two .hero__link--mod-two::before {
+  content: "\f0e4";
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+
+.hero .hero__menu {
+  padding: 30px 20px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 25px 5%;
+  align-items: center;
+}
+
+.hero .hero__menu .hero__hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 20px;
+  z-index: 99;
+  padding: 30px 40px;
+  display: none;
+}
+
+.hero .hero__menu .hero__hamburger .hero__ico {
+  color: #ffa800;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.hero .hero__menu .hero__figure .hero__logo {
+  height: 21px;
+  height: initial;
+}
+
+.hero .hero__menu .hero__nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin: 40px 0;
+  transform: translateY(-150%);
+  transition: transform .5s;
+  position: initial;
+  transform: translateY(0);
+  transition: none;
+  margin: 0;
+  width: initial;
+}
+
+.hero .hero__menu .hero__nav .hero__list {
+  background: white;
+  padding: 8px 0;
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  height: 45px;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item {
+  list-style: none;
+  position: relative;
+  padding: 10px 20px;
+  overflow: hidden;
+  padding: 0;
+  overflow: initial;
+  height: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__link {
+  text-decoration: none;
+  color: #172b4c;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__link:hover {
+  color: #ffa800;
+  transition: .3s;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__link--ico {
+  cursor: pointer;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__link--ico::after {
+  content: "\f107";
+  font-family: FontAwesome;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+  position: initial;
+  padding: 0;
+  padding-left: 5px;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__sub__list {
+  margin: 10px 0 0 10px;
+  height: 0;
+  transition: height .5s ease;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin: 0;
+  transition: initial;
+  width: max-content;
+  height: initial;
+  display: none;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__sub__list .hero__sub__item {
+  list-style: none;
+  margin: 10px 0;
+  margin: 0;
+  padding: 15px;
+  background: white;
+  border-bottom: 1px solid rgba(23, 43, 76, 0.164);
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__sub__list .hero__sub__item .hero__sub__link {
+  text-decoration: none;
+  color: #172b4c;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__sub__list .hero__sub__item .hero__sub__link:hover {
+  color: #ffa800;
+  transition: .3s;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__sub__list .hero__sub__item .hero__sub__link::before {
+  content: "\f138";
+  font-family: FontAwesome;
+  margin-right: 10px;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__sub__list .hero__sub__item:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__sub__list .hero__sub__item:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item:nth-child(1) {
+  border-bottom: 1px solid #ffa800;
+  border: none;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item:nth-child(1) .hero__link {
+  color: #ffa800;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #ffa800;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item:nth-child(3) {
+  padding-bottom: 0;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item:nth-child(4) {
+  padding-bottom: 0;
+}
+
+.hero .hero__menu .hero__links {
+  display: none;
+  display: initial;
+}
+
+.hero .hero__menu .hero__links .hero__register {
+  display: initial;
+  position: absolute;
+  right: 10%;
+  text-decoration: none;
+  color: white;
+  background: #ffa800;
+  padding: 8px 18px;
+  border-radius: 5px;
+  top: 25%;
+  font-size: 1.5rem;
+  outline: none;
+  position: initial;
+}
+
+.hero .hero__menu .hero__links .hero__register:hover {
+  background: #CC8600;
+  transition: .5s;
+}
+
+.hero .hero__menu .hero__links .hero__search {
+  position: absolute;
+  right: 0;
+  padding: 0 20px;
+  color: white;
+  padding: 0 40px;
+  position: initial;
+  padding: 0 18px;
+}
+
+.hero__item:hover .hero__sub__list {
+  display: block !important;
+}
+
+.two {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}

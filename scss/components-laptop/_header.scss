@@ -1,0 +1,521 @@
+.hero{
+  font-family: $font-IBM;
+  background-color: rgba(0, 0, 0, 0.616);
+  background-image: url(../img/banner-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode:  multiply;
+  height: 100vh;
+  width: 100%;
+
+  .hero__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.301);
+
+    // todo laptop
+    justify-content: space-between;
+    padding: 15px 5%;
+    // todo laptop
+
+    .hero__content{
+      // todo laptop
+      display: initial;
+      display: flex;
+      gap: 20px;
+      font-size: 1.2rem;
+
+      .hero__link{
+        color: $color-one;
+        text-decoration: none;
+      }
+
+      .hero__link:hover{
+        color: $color-tree;
+        transition: .2s;
+      }
+
+      .hero__link--mod{
+        border-right: 1px solid rgba(255, 255, 255, 0.301);
+        padding-right: 10px;
+      }
+
+      .hero__link--mod::before{
+        content: "\f059";
+        font-family: FontAwesome;
+        margin-right: 5px;
+      }
+
+      .hero__link--mod-two::before{
+        content: "\f0e0";
+        font-family: FontAwesome;
+        margin-right: 5px;
+      }
+      // todo laptop
+    }
+
+    .hero__content__two{
+      display: flex;
+      gap: 10px;
+      font-size: 1.2rem;
+
+      .hero__select{
+        border-right: 1px solid rgba(255, 255, 255, 0.301);
+        padding-right: 10px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+
+        .select{
+          background: none;
+          border: none;
+          color: $color-one;
+          outline: none;
+          font-size: 1.2rem;
+          
+          .select__item{
+            color: $color-two;
+          }
+
+        }
+        
+      }
+
+
+      .hero__link{
+        text-decoration: none;
+        color: $color-one;
+      }
+
+      .hero__link--mod{
+        border-right: 1px solid rgba(255, 255, 255, 0.301);
+        padding-right: 10px;
+      }
+
+      // todo style tablet
+      .hero__link--mod::before{
+        content: "\f090";
+        font-family: FontAwesome;
+        margin-right: 5px;
+      }
+
+      .hero__link--mod-two::before{
+        content: "\f0e4";
+        font-family: FontAwesome;
+        margin-right: 5px;
+      }
+      // todo style tablet
+
+    }
+
+  }
+
+  .hero__menu{
+    padding: 30px 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    // todo laptop
+    justify-content: space-between;
+    padding: 25px 5%;
+    align-items: center;
+    // todo laptop
+
+
+    .hero__hamburger{
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 30px 20px;
+      z-index: 99;
+      // todo style tablet
+      padding: 30px 40px;
+      // todo style tablet
+    // todo laptop
+    display: none;
+    // todo laptop
+
+
+      .hero__ico{
+        color: $color-tree;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+
+    }
+
+    .hero__figure{
+
+      .hero__logo{
+        height: 21px;
+    // todo laptop
+    height: initial;
+    // todo laptop
+
+      }
+
+    }
+
+    .hero__nav{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      margin: 40px 0;
+      transform: translateY(-150%);
+      transition: transform .5s;
+    // todo laptop
+    position: initial;
+    transform: translateY(0);
+    transition: none;
+    margin: 0;
+    width: initial;
+    // todo laptop
+
+
+      .hero__list{
+        background: $color-one;
+        padding: 8px 0;
+        margin-top: 9px;
+    // todo laptop
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    background: none;
+    height: 45px;
+    // todo laptop
+
+
+        .hero__item{
+          list-style: none;
+          position: relative;
+          padding: 10px 20px;
+          overflow: hidden;
+    // todo laptop
+    // position: relative;
+    padding: 0;
+    overflow: initial;
+    // padding-bottom: 10px;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    // todo laptop
+
+
+          .hero__link{
+            text-decoration: none;
+            color: $color-four;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+    // todo laptop
+    color: $color-one;
+    // todo laptop
+
+
+            &:hover{
+              color: $color-tree;
+              transition: .3s;
+            }
+
+          }
+
+          .hero__link--ico{
+            cursor: pointer;
+          }
+
+          .hero__link--ico::after{
+            content: "\f107";
+            font-family: FontAwesome;
+            font-size: 1.2rem;
+            position: absolute;
+            right: 0;
+            padding-right: 20px;
+    // todo laptop
+    position: initial;
+    padding: 0;
+    padding-left: 5px;
+    // todo laptop
+
+          }
+
+          .hero__sub__list{
+            margin: 10px 0 0 10px;
+            height: 0;
+            transition: height .5s ease;
+    // todo laptop
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin: 0;
+    transition: initial;
+    width: max-content;
+    // padding-top: 15px;
+    // margin-top: 15px;
+    height: initial;
+    display: none;
+    // todo laptop
+
+
+            .hero__sub__item{
+              list-style: none;
+              margin: 10px 0;
+    // todo laptop
+    margin: 0;
+    padding: 15px;
+    background: $color-one;
+    border-bottom: 1px solid rgba(23, 43, 76, 0.164);
+    // todo laptop
+
+
+              .hero__sub__link{
+                text-decoration: none;
+                color: $color-four;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+
+
+                &:hover{
+                  color: $color-tree;
+                  transition: .3s;
+                }
+
+              }
+
+              .hero__sub__link::before{
+                content: "\f138";
+                font-family: FontAwesome;
+                margin-right: 10px;
+              }
+
+            }
+
+    // todo laptop
+            .hero__sub__item:first-child{
+              border-radius: 5px 5px 0 0;
+            }
+
+            .hero__sub__item:last-child{
+              border-radius: 0 0 5px 5px;
+            }
+    // todo laptop
+
+          }
+
+        }
+
+        .hero__item:nth-child(1){
+          border-bottom: 1px solid $color-tree;
+    // todo laptop
+    border: none;
+    // todo laptop
+
+
+          .hero__link{
+            color: $color-tree;
+          }
+
+        }
+
+        // todo laptop
+        .hero__item:nth-child(1)::before{
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-bottom: 1px solid $color-tree;
+        }
+        // todo laptop
+
+        .hero__item:nth-child(3){
+          padding-bottom: 0;
+        }
+
+        .hero__item:nth-child(4){
+          padding-bottom: 0;
+        }
+
+      }
+
+    }
+
+    .hero__links{
+    // todo laptop
+    display: none;
+    // todo laptop
+
+      
+      // todo style tablet
+      .hero__register{
+        display: initial;
+        position: absolute;
+        right: 10%;
+        text-decoration: none;
+        color: $color-one;
+        background: $color-tree;
+        padding: 8px 18px;
+        border-radius: 5px;
+        top: 25%;
+        font-size: 1.5rem;
+        outline: none;
+
+        &:hover{
+          background: #CC8600;
+          transition: .5s;
+        }
+
+      }
+      // todo style tablet
+      
+      .hero__search{
+        position: absolute;
+        right: 0;
+        padding: 0 20px;
+        color: $color-one;
+              // todo style tablet
+      padding: 0 40px;
+      // todo style tablet
+      }
+
+    }
+
+  }
+
+  .hero__container__two{
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 75%;
+    color: $color-one;
+
+    .hero__title{
+      font-family: $font-Rubik;
+      font-weight: 400;
+      font-size: 4.2rem;
+      // todo style tablet
+      font-size: 5.2rem;
+      padding: 0 80px;
+      // todo style tablet
+
+    }
+
+    .hero__links{
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      justify-content: center;
+      gap: 20px;
+
+      .hero__link{
+        background: $color-tree;
+        color: $color-one;
+        padding: 8px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        border: 1px solid $color-tree;
+        font-family: 1.5rem;
+      // todo style tablet
+      padding: 10px 20px;
+      // todo style tablet
+
+
+        &:hover{
+          background: #CC8600;
+          transition: .5s;
+          border: 1px solid #CC8600;
+        }
+
+      }
+
+      .hero__link:first-child{
+        background: none;
+
+        &:hover{
+          background: #CC8600;
+          transition: .5s;
+          border: 1px solid #CC8600;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+// style add javascript
+.sub_menu{
+  color: $color-tree !important;
+}
+
+.hamburger__active{
+  transform: translateY(0) !important;
+  transition: transform .5s ease;
+}
+
+.menu__scroll{
+  background: $color-one !important;
+  padding: 20px !important;
+
+  .hero__hamburger{
+    padding: 20px !important;
+  }
+
+  .hero__links{
+      
+    .hero__search{
+      color: $color-four !important;
+    }
+
+  }
+
+  .hero__nav{
+    border-top: 1px solid rgba(23, 43, 76, 0.411);
+    // todo laptop
+    border: none;
+    // todo laptop
+
+
+    .hero__list{
+      margin-top: 0 !important;
+    // todo laptop
+      height: 25px !important;
+    // todo laptop
+
+    // todo laptop
+    .hero__item{
+
+      .hero__link{
+        color: $color-four !important;
+      }
+
+    }
+    // todo laptop
+// todo laptop
+    .hero__item:nth-child(1){
+
+      .hero__link{
+        color: $color-tree !important;
+      }
+
+    }
+// todo laptop
+
+    }
+
+  }
+
+}
+
+    // todo laptop
+
+.hero__item:hover .hero__sub__list{
+  display: block !important;
+}
+    // todo laptop

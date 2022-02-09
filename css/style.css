@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.hero {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0.616);
+  background-image: url(../img/banner-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero .hero__container {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.301);
+}
+
+.hero .hero__container .hero__content {
+  display: none;
+}
+
+.hero .hero__container .hero__content__two {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.hero .hero__container .hero__content__two .hero__select {
+  border-right: 1px solid rgba(255, 255, 255, 0.301);
+  padding-right: 10px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero__container .hero__content__two .hero__select .select {
+  background: none;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.hero .hero__container .hero__content__two .hero__select .select .select__item {
+  color: black;
+}
+
+.hero .hero__container .hero__content__two .hero__link {
+  text-decoration: none;
+  color: white;
+}
+
+.hero .hero__container .hero__content__two .hero__link:hover {
+  color: #ffa800;
+  transition: .3s;
+}
+
+.hero .hero__container .hero__content__two .hero__link--mod {
+  border-right: 1px solid rgba(255, 255, 255, 0.301);
+  padding-right: 10px;
+}
+
+.hero .hero__menu {
+  padding: 30px 20px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero .hero__menu .hero__hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 20px;
+  z-index: 99;
+}
+
+.hero .hero__menu .hero__hamburger .hero__ico {
+  color: #ffa800;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.hero .hero__menu .hero__figure .hero__logo {
+  height: 21px;
+}
+
+.hero .hero__menu .hero__nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin: 40px 0;
+  transform: translateY(-150%);
+  transition: transform .5s;
+}
+
+.hero .hero__menu .hero__nav .hero__list {
+  background: white;
+  padding: 8px 0;
+  margin-top: 9px;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item {
+  list-style: none;
+  position: relative;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__link {
+  text-decoration: none;
+  color: #172b4c;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__link:hover {
+  color: #ffa800;
+  transition: .3s;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__link--ico {
+  cursor: pointer;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__link--ico::after {
+  content: "\f107";
+  font-family: FontAwesome;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__sub__list {
+  margin: 10px 0 0 10px;
+  height: 0;
+  transition: height .5s ease;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__sub__list .hero__sub__item {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__sub__list .hero__sub__item .hero__sub__link {
+  text-decoration: none;
+  color: #172b4c;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__sub__list .hero__sub__item .hero__sub__link:hover {
+  color: #ffa800;
+  transition: .3s;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item .hero__sub__list .hero__sub__item .hero__sub__link::before {
+  content: "\f138";
+  font-family: FontAwesome;
+  margin-right: 10px;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item:nth-child(1) {
+  border-bottom: 1px solid #ffa800;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item:nth-child(1) .hero__link {
+  color: #ffa800;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item:nth-child(3) {
+  padding-bottom: 0;
+}
+
+.hero .hero__menu .hero__nav .hero__list .hero__item:nth-child(4) {
+  padding-bottom: 0;
+}
+
+.hero .hero__menu .hero__links .hero__register {
+  display: none;
+}
+
+.hero .hero__menu .hero__links .hero__search {
+  position: absolute;
+  right: 0;
+  padding: 0 20px;
+  color: white;
+}
+
+.hero .hero__menu .hero__links .hero__search:hover {
+  color: #ffa800;
+  transition: .3s;
+}
+
+.hero .hero__container__two {
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  height: 75%;
+  color: white;
+}
+
+.hero .hero__container__two .hero__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 4.2rem;
+}
+
+.hero .hero__container__two .hero__links {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero .hero__container__two .hero__links .hero__link {
+  background: #ffa800;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid #ffa800;
+  font-family: 1.5rem;
+}
+
+.hero .hero__container__two .hero__links .hero__link:hover {
+  background: #CC8600;
+  transition: .5s;
+  border: 1px solid #CC8600;
+}
+
+.hero .hero__container__two .hero__links .hero__link:first-child {
+  background: none;
+}
+
+.hero .hero__container__two .hero__links .hero__link:first-child:hover {
+  background: #CC8600;
+  transition: .5s;
+  border: 1px solid #CC8600;
+}
+
+.sub_menu {
+  color: #ffa800 !important;
+}
+
+.hamburger__active {
+  transform: translateY(0) !important;
+  transition: transform .5s ease;
+}
+
+.menu__scroll {
+  background: white !important;
+  padding: 20px !important;
+}
+
+.menu__scroll .hero__hamburger {
+  padding: 20px !important;
+}
+
+.menu__scroll .hero__links .hero__search {
+  color: #172b4c !important;
+}
+
+.menu__scroll .hero__nav {
+  border-top: 1px solid rgba(23, 43, 76, 0.411);
+}
+
+.menu__scroll .hero__nav .hero__list {
+  margin-top: 0 !important;
+}
